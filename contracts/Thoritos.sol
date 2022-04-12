@@ -219,7 +219,7 @@ contract Thoritos is ERC20Interface{
                    amount = locked[_of][_reason].amount;
     }
 
-    function unlock(address _of) public onlyFounder returns (uint256 unlockableTokens)
+    function unlock(address _of) public returns (uint256 unlockableTokens)
     {
         uint256 lockedTokens;
 
